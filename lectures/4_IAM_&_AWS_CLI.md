@@ -42,3 +42,27 @@ Policy Structure
     ]
 }
 ```
+
+## MFA
+Password Policy
+- minimum password length
+- require specific character types
+  - lower case
+  - upper case
+  - numbers
+  - non-alphanumerics
+- allow all IAM users to change their own passwords
+- require users to change their passwords periodically (expiration)
+- prevent password re-use
+
+POSSIBLE EXAM QUESTION: Multi-Factor Authentication (MFA)
+- users have acces to change configurations or delete resources in your AWS account
+- protect Root accounts and IAM users
+- MFA = password (you know) + security device (you own)
+- MFA Device options in AWS
+  - Virtual MFA Device: support multiple tokens on a single device
+    - Google Authenticator (mobile only)
+    - Authy (multi-device)
+  - Universal 2nd Factor (U2F) Security Key: support multiple root and IAM users using a signle security key e.g. YubiKey by Yubico (3rd party)
+  - Hardware Key Fob MFA Device e,g, Gemalto (3rd party)
+  - Hardware Key Fob MFA Device for AWS GovCloud (US) e.g. SurePassID (3rd party)
